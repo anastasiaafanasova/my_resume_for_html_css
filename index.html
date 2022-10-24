@@ -7,89 +7,109 @@
     <meta name="keywords" content="резюме, навыки, работа, характеристики">
     <meta name="description" content="Создание резюме для отработки навыков по HTML и CSS">
     <title>Resume</title>
+    <link rel="stylesheet" href="01_selector_index.css">
 </head>
 <body>
-    <h1>Резюме</h1>
-    <hr>
-    <img src="photo.jpg" width="150">
-    <h3>ФИО: Афанасова Анастасия Викторовна
-        <br>
-        Дата рождения: 16.07.1990
-        <p>
-            С 2016 года являюсь репетитором по математике. Последние 3 года нахожусь в <em>декрете</em>.
-            <br>
-            С 2022 года осваиваю новую профессию разработчика на <strong>ЯП Python</strong>.
-            <br>
-            <br>
-        </p>
-        Опыт работы
-        <table border="2">
-            <thead>
-                <tr>
-                    <th>Название</th>
-                    <th>Должность</th>
-                    <th>Год</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Кнауф</td>
-                    <td>Специалист отдела закупок</td>
-                    <td>2011-2012</td>
-                </tr>
-                <tr>
-                    <td>Тандер</td>
-                    <td>Ведущий специалист</td>
-                    <td>2012-2015</td>
-                </tr>
-                <tr>
-                    <td>Тандер</td>
-                    <td>Руководитель сектора</td>
-                    <td>2015-2016</td>
-                </tr>
-                <tr>
-                    <td>Самозанятость</td>
-                    <td>Репетитор по математике</td>
-                    <td>2016 - настоящее время</td>
-                </tr>
-            </tbody>
-        </table>
-        <hr>
-        Хобби:
-        <ul>
-            <li>Сноуборд</li>
-            <li>Квизы</li>
-            <li>Путешествия</li>
-        </ul>
-
-        Социальные сети:
-        <br>
-        <a href="https://t.me/AnastasiaSeledtsova" target="_blank">Telegram</a> |
-        <a href="https://t.me/AnastasiaSeledtsova" target="_blank">Telegram</a>
+    <div class="container">
+        <h1>Резюме</h1>
 
         <hr>
-        Связаться со мной
-        <br>
+
+        <div class="info">
+            <img src="photo.jpg" class="avatar">
+            <div class="info-text">
+                <h3>ФИО: Афанасова Анастасия Викторовна</h3>
+                <h4>Дата рождения: 16.07.1990</h4>
+                <p>
+                    С 2016 года являюсь репетитором по математике. Последние 3 года нахожусь в <em>декрете</em>.
+                    <br>
+                    С 2022 года осваиваю новую профессию разработчика на <strong>ЯП Python</strong>.
+                    <br>
+                    </p>
+                </div>
+        </div>
+
+        <h3>Опыт работы:</h3>
         
-        <form>
-            <div>
-                <label for="name">Ваше имя</label>
-                <input type="text" id="name" placeholder="Введите имя">
-            </div>
-    
-            <div>
-                <label for="email">Ваш email</label>
-                <input type="email" id="email" placeholder="Введите email">
-            </div>
+        <div class="work">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Кнауф</td>
+                        <td>Специалист отдела закупок</td>
+                        <td>2011-2012</td>
+                    </tr>
+                    <tr>
+                        <td>Тандер</td>
+                        <td>Ведущий специалист</td>
+                        <td>2012-2015</td>
+                    </tr>
+                    <tr>
+                        <td>Тандер</td>
+                        <td>Руководитель сектора</td>
+                        <td>2015-2016</td>
+                    </tr>
+                    <tr>
+                        <td>Самозанятость</td>
+                        <td>Репетитор по математике</td>
+                        <td>2016 - настоящее время</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-            <div>
-                <label for="message">Ваше сообщение</label>
-                <br>
-                <textarea id="message" cols="25" rows="5"></textarea>
-            </div>
+        <div class="hobbie">
+            <h4>Хобби:</h4>
+            <ul>
+                <li>Сноуборд</li>
+                <li>Квизы</li>
+                <li>Путешествия</li>
+            </ul>
+        </div>
 
-            <button type="submit">Отправить</button>
+        <div class="contact">
+            Социальные сети:
+            <br>
+            <a href="https://t.me/AnastasiaSeledtsova" target="_blank">Telegram</a> |
+            <a href="https://t.me/AnastasiaSeledtsova" target="_blank">Telegram</a>
+            <p>
+                <button class="btn">Отправить!</button>
+            </p>
+        </div>
+
+        <hr>
+
+        <form action="/" class="form">
+            <h5>Связаться со мной</h5>
+
+            <div class="form-row">
+            
+                <form class="bg-green">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+            
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <textarea id="message"></textarea>
+                </div>
+            </div>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
         </form>
-    </h3>
+    </div>
 </body>
 </html>
